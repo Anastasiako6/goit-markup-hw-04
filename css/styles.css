@@ -8,6 +8,7 @@
     --second-background-color: #F5F5F5;
     --color-hero-button: #188CE8;
     --color-section-members: #F5F4FA;
+    --color-icon:#AFB1B8;
 }
 
 /* Утилиты */
@@ -148,8 +149,13 @@ body {
     padding-top: 200px;
     padding-bottom: 200px;
 
-    background-color:var(--background-color);
     text-align: center;
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)   
+    ), url(../images/bgi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: cover;
 }
 
 .hero-title{
@@ -211,10 +217,22 @@ body {
     gap: 30px;
 }
 
-.benefits-item{
+.benefits-box{
+    margin-bottom: 30px;
     width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.benefits-item{
+    display: block;
+    justify-content: center;
+    align-items: center;
 
+}
 .benefits-title{
     margin-bottom: 10px;
 
@@ -296,6 +314,7 @@ body {
     color: var(--title-text-color);
 }
 .section-members-job{
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.9;
     text-align: center;
@@ -426,4 +445,65 @@ body {
 
 .text-pad{
    padding: 20px 24px;
+}
+
+
+
+
+
+.section-members-list{
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.section-members-item{
+    width: 44px;
+    height: 44px;
+}
+
+.section-members-link{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------------------------- */
+.client .section-title{
+    margin-bottom: 50px;
+}
+
+.client-list{
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+.client-item{
+    width: calc((100%-150px)/6);
+    height: 90px;
+}
+
+.client-link{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-icon{
+    fill: var(--color-icon);
+}
+
+.client-link:hover{
+    border: 1px solid var(--accent-text-color);
+}
+
+.header-icons{
+    margin-right: 10px;
+    fill: currentColor;
 }
