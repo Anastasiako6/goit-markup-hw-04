@@ -155,7 +155,7 @@ body {
     ), url(../images/bgi.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    border-style: cover;
+    background-size: cover;
 }
 
 .hero-title{
@@ -199,6 +199,12 @@ body {
     color: var(--primary-white-color);
 }
 
+.header-icons{
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+/* ----------------------------- */
 .visually-hidden{
     position: absolute;
     white-space: nowrap;
@@ -319,6 +325,73 @@ body {
     line-height: 1.9;
     text-align: center;
 }
+/*  */
+
+.section-members-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+    
+.section-members-item{
+    width: 44px;
+    height: 44px;
+}
+    
+.section-members-link{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.section-members-link:hover , .section-members-link:focus{
+    background-color: var(--accent-text-color);
+}
+    
+.section-members-link:hover .client-icon, .section-members-link:focus.client-icon{
+    fill: var(--primary-white-color);
+}
+    
+/* ----------client----------- */
+.client .section-title{
+    margin-bottom: 50px;
+}
+
+.client-list{
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+.client-item{
+    width: calc((100%-150px)/6);
+    height: 90px;
+}
+
+.client-link{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-icon{
+    fill: var(--color-icon);
+}
+
+.client-link:hover, .client-link:focus{
+    border-color:var(--accent-text-color);
+}
+
+.client-link:hover .client-icon, .client-link:focus .client-icon{
+    fill: var(--accent-text-color);
+}
+
 
 /* -----------footer----------- */
 .footer{
@@ -367,6 +440,57 @@ body {
 .address-link-hue:hover,
 .address-link-hue:focus {
     color: var(--accent-text-color);
+}
+
+/* ---------- footer-icon----------- */
+.join-in{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+
+}
+
+.footer-icon-list{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-icon-link{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon{
+    fill: var(--primary-white-color);
+}
+
+.footer-icon-link:hover, .footer-icon-link:focus{
+    background-color: var(--accent-text-color);
+}
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
+.address-footer{
+    margin-right: 70px;
 }
 
 /* -----------footer----------- */
@@ -445,65 +569,4 @@ body {
 
 .text-pad{
    padding: 20px 24px;
-}
-
-
-
-
-
-.section-members-list{
-display: flex;
-justify-content: center;
-gap: 10px;
-}
-
-.section-members-item{
-    width: 44px;
-    height: 44px;
-}
-
-.section-members-link{
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-white-color);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/* ----------------------------- */
-.client .section-title{
-    margin-bottom: 50px;
-}
-
-.client-list{
-    display: flex;
-    margin-left: auto;
-    gap: 30px;
-}
-.client-item{
-    width: calc((100%-150px)/6);
-    height: 90px;
-}
-
-.client-link{
-    width: 100%;
-    height: 100%;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.client-icon{
-    fill: var(--color-icon);
-}
-
-.client-link:hover{
-    border: 1px solid var(--accent-text-color);
-}
-
-.header-icons{
-    margin-right: 10px;
-    fill: currentColor;
 }
