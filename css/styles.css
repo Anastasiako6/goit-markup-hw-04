@@ -321,6 +321,10 @@ body {
     line-height: 1.9;
     text-align: center;
 }
+.members-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* ----------client----------- */
 
@@ -345,6 +349,7 @@ body {
 }
 .logo-footer{
     margin-bottom: 20px;
+    display: block;
 
     font-family: 'Raleway';
     font-weight: 700;
@@ -521,12 +526,12 @@ body {
 .section-members-item{
     width: 44px;
     height: 44px;
+
 }
     
 .section-members-link{
     width: 100%;
     height: 100%;
-    background-color: var(--primary-white-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -552,7 +557,7 @@ body {
     gap: 30px;
 }
 .client-item{
-    width: calc((100%-150px)/6);
+    width: calc( (100% - 150px) / 6);
     height: 90px;
 }
 
@@ -575,11 +580,4 @@ body {
 
 .client-link:hover .client-icon, .client-link:focus .client-icon{
     fill: var(--accent-text-color);
-}
-
-
-
-.members-card{
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
