@@ -133,6 +133,8 @@ body {
 
 
 .header-communication-item{
+    display: flex;
+    align-items: center;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -156,6 +158,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .hero-title{
@@ -274,27 +278,19 @@ body {
 }
 
 .members-item{
-    padding-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .members-item:not(:last-child){
-    width: 270px;
     margin-right: 30px;
 }
 
 .members-list{
     display: flex;
 }
-.members-card{
-    width: 270px;
-    background-color: #fff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
-}
-.members-photo{
-    margin-bottom: 30px;
-}
+
 .section-members{
     background-color: var(--color-section-members);
 }
@@ -325,8 +321,7 @@ body {
     line-height: 1.9;
     text-align: center;
 }
-/*  */
-    
+
 /* ----------client----------- */
 
 .client-icon{
@@ -360,9 +355,7 @@ body {
 .logo-footer-part{
     color: var(--accent-text-color);
 }
-.link{
-    display: inline-block;
-}
+
 .address-item:not(:last-child){
     margin-bottom: 9px;
 }
@@ -544,7 +537,7 @@ body {
     background-color: var(--accent-text-color);
 }
     
-.section-members-link:hover .client-icon, .section-members-link:focus.client-icon{
+.section-members-link:hover .client-icon, .section-members-link:focus .client-icon{
     fill: var(--primary-white-color);
 }
 
@@ -582,4 +575,11 @@ body {
 
 .client-link:hover .client-icon, .client-link:focus .client-icon{
     fill: var(--accent-text-color);
+}
+
+
+
+.members-card{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
